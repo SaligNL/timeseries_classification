@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="libsvm">
+      <UniqueIdentifier>{1a3fe989-d1f0-4f3a-9b4f-9ceea48b47e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pwjTools">
+      <UniqueIdentifier>{2dfc0906-646f-4980-b184-11cd97af72fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DepthMapSktIO">
+      <UniqueIdentifier>{eb72e0cd-8ce4-4c2d-aa6b-7cfb6309b4a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fall_down_detection">
+      <UniqueIdentifier>{7ecafd3b-0a8d-46e5-b68b-062dfd58992f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HON4D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sequential_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libsvm\svm.h">
+      <Filter>libsvm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libsvm\mysvm.h">
+      <Filter>libsvm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pwjTools\file_operations.h">
+      <Filter>pwjTools</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalHON4D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fftw-3.3.3-dll64\fftw3.h">
+      <Filter>pwjTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pwjTools\FFT_function_old.h">
+      <Filter>pwjTools</Filter>
+    </ClInclude>
+    <ClInclude Include="FFTW_interface.h">
+      <Filter>pwjTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DepthMapSktIO\DepthMapSkt.h">
+      <Filter>DepthMapSktIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DepthMapSktIO\DepthMapSktBinFileIO.h">
+      <Filter>DepthMapSktIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DepthMapSktIO\targetver.h">
+      <Filter>DepthMapSktIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DepthMapSktIO\stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myMatrix.h">
+      <Filter>pwjTools</Filter>
+    </ClInclude>
+    <ClInclude Include="read_from_kinect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fall_down_detection\Falldetectionfunc.h">
+      <Filter>fall_down_detection</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HON4DPara.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HON4DFeat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HON4DRun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequential_version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsvm\svm.cpp">
+      <Filter>libsvm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsvm\svm-train.c">
+      <Filter>libsvm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsvm\svm-predict.c">
+      <Filter>libsvm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libsvm\mysvm.cpp">
+      <Filter>libsvm</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalHON4DPara.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalHON4DFeat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pwjTools\file_operations.cpp">
+      <Filter>pwjTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pwjTools\FFt_function_old.cpp">
+      <Filter>pwjTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DepthMapSktIO\DepthMapSkt.cpp">
+      <Filter>DepthMapSktIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DepthMapSktIO\DepthMapSktBinFileIO.cpp">
+      <Filter>DepthMapSktIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DepthMapSktIO\SampleDepthMapSktIO.cpp">
+      <Filter>DepthMapSktIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DepthMapSktIO\stdafx.cpp">
+      <Filter>DepthMapSktIO</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="myMatrix.cpp">
+      <Filter>pwjTools</Filter>
+    </ClCompile>
+    <ClCompile Include="read_from_kinect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fall_down_detection\Falldetectionfunc.cpp">
+      <Filter>fall_down_detection</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

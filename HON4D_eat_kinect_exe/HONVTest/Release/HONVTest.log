@@ -1,0 +1,61 @@
+﻿Build started 2014/10/14 14:22:30.
+     1>Project "D:\SALIG_project\HON4D\HON4D\HON4D_eat_kinect_exe\HONVTest\HONVTest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\LocalHON4D_eat_kinect.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\OpenCV-2.4.6\opencv\include\opencv" /I"C:\OpenCV-2.4.6\opencv\include\opencv2" /I"C:\OpenCV-2.4.6\opencv\build\include\opencv2" /I"C:\OpenCV-2.4.6\opencv\build\include\opencv" /I"C:\OpenCV-2.4.6\opencv\include" /I"C:\OpenCV-2.4.6\opencv\build\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\opencv-2.4.6\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\salig_project\hon4d\hon4d\hon4d_eat_kinect_exe\honvtest\sequential_version.h(245): warning C4520: 'Sequential' : multiple default constructors specified
+     1>d:\salig_project\hon4d\hon4d\hon4d_eat_kinect_exe\honvtest\sequential_version.h(105): warning C4018: '>' : signed/unsigned mismatch
+     1>d:\salig_project\hon4d\hon4d\hon4d_eat_kinect_exe\honvtest\sequential_version.h(110): warning C4018: '>' : signed/unsigned mismatch
+     1>main.cpp(53): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>main.cpp(63): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>main.cpp(71): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>main.cpp(86): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>main.cpp(90): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>main.cpp(95): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>main.cpp(99): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>main.cpp(170): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>main.cpp(171): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>main.cpp(172): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\SALIG_project\HON4D\HON4D\HON4D_eat_kinect_exe\Release\LocalHON4D_eat_kinect.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\OpenCV-2.4.6\opencv\build\x86\vc10\bin" /LIBPATH:"C:\OpenCV-2.4.6\opencv\build\x86\vc10\lib" /LIBPATH:..\fftw opencv_core246.lib opencv_ml246.lib opencv_highgui246.lib opencv_imgproc246.lib opencv_video246.lib opencv_legacy246.lib opencv_features2d246.lib "libfftw3-3.lib" "libfftw3f-3.lib" "libfftw3l-3.lib" kinect10.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"D:\SALIG_project\HON4D\HON4D\HON4D_eat_kinect_exe\Release\LocalHON4D_eat_kinect.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\SALIG_project\HON4D\HON4D\HON4D_eat_kinect_exe\Release\LocalHON4D_eat_kinect.lib" /MACHINE:X86 Release\DepthMapSkt.obj
+         Release\DepthMapSktBinFileIO.obj
+         Release\SampleDepthMapSktIO.obj
+         Release\stdafx.obj
+         Release\Falldetectionfunc.obj
+         Release\mysvm.obj
+         "Release\svm-predict.obj"
+         "Release\svm-train.obj"
+         Release\svm.obj
+         Release\FFt_function_old.obj
+         Release\file_operations.obj
+         Release\HON4DFeat.obj
+         Release\HON4DPara.obj
+         Release\HON4DRun.obj
+         Release\LocalHON4DFeat.obj
+         Release\LocalHON4DPara.obj
+         Release\main.obj
+         Release\myMatrix.obj
+         Release\read_from_kinect.obj
+         Release\Sequential_version.obj
+         Release\stdafx.obj
+     1>Release\stdafx.obj : warning LNK4042: object specified more than once; extras ignored
+         Generating code
+     1>d:\salig_project\hon4d\hon4d\hon4d_eat_kinect_exe\libsvm\mysvm.cpp(531): warning C4700: uninitialized local variable 'rtn' used
+         Finished generating code
+         HONVTest.vcxproj -> D:\SALIG_project\HON4D\HON4D\HON4D_eat_kinect_exe\Release\LocalHON4D_eat_kinect.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\LocalHON4D_eat_kinect.unsuccessfulbuild".
+         Touching "Release\LocalHON4D_eat_kinect.lastbuildstate".
+     1>Done Building Project "D:\SALIG_project\HON4D\HON4D\HON4D_eat_kinect_exe\HONVTest\HONVTest.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.50

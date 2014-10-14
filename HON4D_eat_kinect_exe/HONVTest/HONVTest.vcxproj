@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32709F18-DDD3-474E-91BA-8F53A09528D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>HONVTest</RootNamespace>
+    <ProjectName>LocalHON4D_eat_kinect</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(KINECTSDK10_DIR)inc;$(KINECT_TOOLKIT_DIR)inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(KINECTSDK10_DIR)lib;$(KINECT_TOOLKIT_DIR)lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(KINECTSDK10_DIR)\lib\x86;C:\OpenCV-2.4.6\opencv\build\x64\vc9\bin;C:\OpenCV-2.4.6\opencv\build\x86\vc10\bin;C:\OpenCV-2.4.6\opencv\build\x86\vc9\bin;C:\OpenCV-2.4.6\opencv\build\x64\vc10\bin;..\fftw;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(KINECTSDK10_DIR)\inc;C:\OpenCV-2.4.6\opencv\include\opencv;C:\OpenCV-2.4.6\opencv\build\include\opencv2;C:\OpenCV-2.4.6\opencv\build\include\opencv;C:\OpenCV-2.4.6\opencv\include\opencv2;..\fftw;$(IncludePath)</IncludePath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\fftw;C:\OpenCV-2.4.6\opencv\build\include\opencv2;C:\OpenCV-2.4.6\opencv\build\include\opencv;C:\OpenCV-2.4.6\opencv\build\include;c:\OpenCV-2.4.6\opencv\include\opencv;c:\OpenCV-2.4.6\opencv\include\opencv2;c:\OpenCV-2.4.6\opencv\include\;$(KINECTSDK10_DIR)inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\OpenCV-2.4.6\opencv\build\x86\vc10\lib;C:\fftw;$(KINECTSDK10_DIR)lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core246d.lib;opencv_ml246d.lib;opencv_highgui246d.lib;opencv_imgproc246d.lib;opencv_video246d.lib;opencv_legacy246d.lib;opencv_features2d246d.lib;fftw3.lib;kinect10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCV-2.4.6\opencv\include\opencv;C:\OpenCV-2.4.6\opencv\include\opencv2;C:\OpenCV-2.4.6\opencv\build\include\opencv2;C:\OpenCV-2.4.6\opencv\build\include\opencv;C:\OpenCV-2.4.6\opencv\include;C:\OpenCV-2.4.6\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_core246.lib;opencv_ml246.lib;opencv_highgui246.lib;opencv_imgproc246.lib;opencv_video246.lib;opencv_legacy246.lib;opencv_features2d246.lib;libfftw3-3.lib;libfftw3f-3.lib;libfftw3l-3.lib;kinect10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\OpenCV-2.4.6\opencv\build\x86\vc10\bin;C:\OpenCV-2.4.6\opencv\build\x86\vc10\lib;..\fftw;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\fftw-3.3.3-dll64\fftw3.h" />
+    <ClInclude Include="..\DepthMapSktIO\DepthMapSkt.h" />
+    <ClInclude Include="..\DepthMapSktIO\DepthMapSktBinFileIO.h" />
+    <ClInclude Include="..\DepthMapSktIO\stdafx.h" />
+    <ClInclude Include="..\DepthMapSktIO\targetver.h" />
+    <ClInclude Include="..\fall_down_detection\Falldetectionfunc.h" />
+    <ClInclude Include="..\libsvm\mysvm.h" />
+    <ClInclude Include="..\libsvm\svm.h" />
+    <ClInclude Include="..\pwjTools\FFT_function_old.h" />
+    <ClInclude Include="..\pwjTools\file_operations.h" />
+    <ClInclude Include="FFTW_interface.h" />
+    <ClInclude Include="HON4D.h" />
+    <ClInclude Include="LocalHON4D.h" />
+    <ClInclude Include="myMatrix.h" />
+    <ClInclude Include="read_from_kinect.h" />
+    <ClInclude Include="sequential_version.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DepthMapSktIO\DepthMapSkt.cpp" />
+    <ClCompile Include="..\DepthMapSktIO\DepthMapSktBinFileIO.cpp" />
+    <ClCompile Include="..\DepthMapSktIO\SampleDepthMapSktIO.cpp" />
+    <ClCompile Include="..\DepthMapSktIO\stdafx.cpp" />
+    <ClCompile Include="..\fall_down_detection\Falldetectionfunc.cpp" />
+    <ClCompile Include="..\libsvm\mysvm.cpp" />
+    <ClCompile Include="..\libsvm\svm-predict.c" />
+    <ClCompile Include="..\libsvm\svm-train.c" />
+    <ClCompile Include="..\libsvm\svm.cpp" />
+    <ClCompile Include="..\pwjTools\FFt_function_old.cpp" />
+    <ClCompile Include="..\pwjTools\file_operations.cpp" />
+    <ClCompile Include="HON4DFeat.cpp" />
+    <ClCompile Include="HON4DPara.cpp" />
+    <ClCompile Include="HON4DRun.cpp" />
+    <ClCompile Include="LocalHON4DFeat.cpp" />
+    <ClCompile Include="LocalHON4DPara.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="myMatrix.cpp" />
+    <ClCompile Include="read_from_kinect.cpp" />
+    <ClCompile Include="Sequential_version.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
